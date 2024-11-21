@@ -1,0 +1,114 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+}
+.main{
+    background-color: #f2f4f7;
+    height: 500px;
+    display: block;
+    text-align: center;
+    position: relative;
+    
+}
+
+.submain{
+
+    position: absolute;
+    animation-name: x;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+/* @keyframes x{
+    0%{
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 600px;
+        top: 0px;
+    }
+    50%{   
+        top: 500px;
+        left: 600px;
+    }
+    75%{
+        top: 500px;
+        left: -0px;  
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+    } */
+
+ @keyframes x{
+    0%{
+        left: -400px;
+        top: 20px;
+    }
+    100%{
+        left: 225px;
+        top: 20px;
+    } 
+ }
+img{
+    margin-top: 2%;
+    margin-right: 1%;
+    width: 30%;
+}
+
+
+.log{
+    margin-top: -3px;
+    
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight:lighter;
+    display: block;
+    height: 325px;
+    width: 45%;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffff;
+
+    margin: auto;
+
+}
+
+
+button{
+    color: #ffffff;
+    background-color: #1877f2;
+    display: block;
+    width: 370px;
+    height: 50px;
+    margin: auto;
+    border-radius: 6px;
+    border: none;
+    border-width: 0px;
+    cursor: pointer;
+}
+input[type="text"],input[type="password"]{
+
+    padding-left: 13px;
+    border-radius: 6px;
+    border: 1px solid rgb(193, 192, 192);
+    width: 350px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    outline-color: steelblue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+button:hover{
+    background-color: rgb(255, 213, 0);
+    color: black;
+}
